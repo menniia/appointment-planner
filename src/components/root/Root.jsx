@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-const ROUTES = {
+export const ROUTES = {
     CONTACTS: "/contacts",
     APPOINTMENTS: "/appointments"
 }

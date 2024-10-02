@@ -41,6 +41,9 @@ const ContactsPage = ({ contacts, addContact }) => {
                     email={newContact.email}
                     handleSubmit={handleSubmit}
                     handleInputChange={handleInputChange}
+                    setName={(value) => setNewContact((prev) => ({ ...prev, name: value }))}
+                    setPhone={(value) => setNewContact((prev) => ({ ...prev, phone: value }))}
+                    setEmail={(value) => setNewContact((prev) => ({ ...prev, email: value }))}
                 />
                 {isDuplicate && <p style={{ color: "red" }}>This name is already in use</p>}
             </section>

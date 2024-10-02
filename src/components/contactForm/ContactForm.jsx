@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 const ContactForm = ({ name, setName, phone, setPhone, email, setEmail, handleSubmit }) => {
     return (
@@ -41,6 +41,16 @@ const ContactForm = ({ name, setName, phone, setPhone, email, setEmail, handleSu
             </div>
         </form>
     )
+}
+
+ContactForm.propTypes = {
+    name: PropTypes.string,
+    setName: PropTypes.func,
+    phone: PropTypes.string,
+    setPhone: PropTypes.func,
+    email: PropTypes.string,
+    setEmail: PropTypes.func,
+    handleSubmit: PropTypes.func
 }
 
 export default ContactForm;
